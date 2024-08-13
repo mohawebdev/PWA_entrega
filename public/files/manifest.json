@@ -1,0 +1,28 @@
+{
+    "name": "app-juego",
+    "short_name": "app-juego",
+    "icons": [{
+      "src": "../assets/char_192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "../assets/char_256.png",
+          "sizes": "256x256",
+          "type": "image/png"
+        },
+        {
+            "src": "../assets/char_512.png",
+              "sizes": "512x512",
+              "type": "image/png"
+            },
+            {
+                "src": "../assets/char_640.png",
+                  "sizes": "640x640",
+                  "type": "image/png"
+                }],
+    "start_url": "../index.html",
+    "display": "standalone",
+    "background_color": "#33a9ff",
+    "theme_color": "#337aff"
+  }

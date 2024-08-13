@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shooter Game</title>
+  <link rel="manifest" href="files/manifest.json">
+  <meta name="description" content="Una app de Pelis">
+  <meta name="theme-color" content="#6200ee" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Pelis">
+  <link rel="apple-touch-icon" href="assets/char_192.png">
+  <link type="text/css" rel="stylesheet" href="game.css">
+  <meta name="viewport" content="user-scalable=0" />
+  <script src="Game.js" type="text/javascript"></script>
+  <script src="Entity.js" type="text/javascript"></script>
+  <script src="Character.js" type="text/javascript"></script>
+  <script src="Player.js" type="text/javascript"></script>
+  <script src="Opponent.js" type="text/javascript"></script>
+  <script src="Shot.js" type="text/javascript"></script>
+  <script src="main.js" type="text/javascript"></script>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js').then((reg) => {
+          console.log('service worker registered', reg);
+        })
+      })
+    }
+  </script>
+  
+</head>
+
+<body>
+  <button id="pause" class="gamebutton" onclick="this.blur();">Pausa</button>
+  <button id="reset" class="gamebutton" onclick="this.blur();">NUEVA PARTIDA</button>
+  <button id="butInstall" class="gamebutton" aria-label="Install" aria-hidden="true">Instalar app juego...</button>
+
+  <script src="/install.js" type="text/javascript"></script>
+</body>
+
+</html>

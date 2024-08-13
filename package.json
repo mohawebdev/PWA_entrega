@@ -1,0 +1,12 @@
+{
+    "name": "MOOC_html_mod10-PWA_entrega",
+    "version": "3.0.1",
+    "license": "Unlicense",    
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-http-to-https": "^1.1.4"
+    },
+    "scripts": {
+		    "start": "node server.js"
+	  }
+}
